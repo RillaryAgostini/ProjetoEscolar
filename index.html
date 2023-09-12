@@ -4,70 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Feira de Ciências do 2ºA Técnico - Conheça os projetos da nossa turma!">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-  
-    <title>Feira de Ciências da Escola</title>
+    <title>Feira de Ciências da Turma</title>
 </head>
 
 <body>
+
     <header>
-        <h1>Feira de Ciências do 2ºA Técnico</h1>
-        <p>Conheça os projetos da nossa turma!</p>
+        <h1>Feira de Ciências</h1>
     </header>
 
-    <div id="video-container">
-        <video id="meu-video">
-            <source src="/video/Feira_do_conhecimento.mp4" type="video/mp4" alt="Seu navegador não suporta o elemento de vídeo.">
+    <section id="video-apresentacao">
+        <h2>Apresentação</h2>
+        <video controls>
+            <source src="videos/Feira_do_conhecimento.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
         </video>
-    </div>
-    <footer>
-        <div class="rodapé__controle">
-            <button onclick="playPause()">Play/Pause</button>
-            <input type="range" id="volumeRange" min="0" max="1" step="0.1" onchange="setVolume(this.value)"><br>        
+    </section>
+
+    <section class="projetos">
+        <h2>Nossos projetos</h2>
+        <div class="projeto">
+            <h3>Construindo o Futuro Digital</h3>
+            <img src="img/consertando-pc.jpg" alt="Alunos do Ayrton Senna montando os computadores da escola">
+            <p>Em nossa escola, alunos talentosos estão unindo forças com a tecnologia avançada para montar os próximos
+                computadores que servirão como alicerces para a aprendizagem. Através dessa colaboração, eles não
+                somente montam máquinas de ponta, mas também pavimentam o caminho para a próxima era digital da nossa
+                instituição.</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+    </section>
 
-
-
-
-
-
-    <div class="container">
-        <!-- Cartão 1 -->
-        <div class="card">
-            <img src="img/consertando-pc.jpg" alt="Alunos montando os pcs da escola">
-            <h2 class="card-title">Construindo o Futuro Digital: Montagem Colaborativa dos Computadores Escolares</h2>
-            <p>Criando o Futuro: Nossos alunos estão unindo tecnologia e talento para montar os novos computadores da
-                escola. Juntos, eles não apenas montam máquinas, mas também constroem a próxima era digital da nossa
-                instituição!</p>
+    <section class="projetos">
+        <div class="projeto">
+            <h3>Inovação Jovem no Design de Apps</h3>
+            <img src="img/figma-caixa.jpg" alt="Alunos do Ayrton Senna aprendendo a usar o figma">
+            <p>Nesta era digital, jovens designers estão na vanguarda da inovação, criando aplicativos que não apenas
+                capturam a atenção, mas também enriquecem nossa experiência diária. Eles combinam criatividade,
+                tecnologia e uma compreensão profunda das necessidades do usuário moderno, reinventando a maneira como
+                interagimos com o mundo digital.</p>
         </div>
+    </section>
 
-        <!-- Cartão 2 -->
-        <div class="card">
-            <img src="img/figma-caixa.jpg" alt="Alunos utilizando o figma">
-            <h2 class="card-title">Inovação Jovem no Design de Apps</h2>
-            <p>Jovens visionários do Ayrton Senna estão transformando a maneira como interagimos com nossas
-                finanças. Utilizando o Figma, eles estão projetando um aplicativo bancário.</p>
-        </div>
-
-        <!-- Cartão 3 -->
-        <div class="card">
-            <img src="img/codificando.jpg" alt="Alunos aprendendo a programar sites em html">
-            <h2 class="card-title">Dominando o Palco Digital: Uma Introdução ao Design Front-end</h2>
+    <section class="projetos">
+        <div class="projeto">
+            <h3>Dominando o Palco Digital</h3>
+            <img src="img/codificando.jpg" alt="Alunos aprendem a programar no curso técnico da escola Ayrton Senna">
             <p>Mergulhe no fascinante mundo do design de websites! No curso de Front-end, você descobrirá como dar vida
                 às suas ideias, criando páginas interativas e visualmente atraentes. Do brilho de um botão ao movimento
-                de um slider, aprenda a tecer a magia que está por trás dos sites que você visita diariamente. Se você
-                já sonhou em criar sua própria página na web ou melhorar a experiência do usuário em um site, esta
-                matéria é o primeiro passo na sua jornada criativa. Prepare-se para colorir a web com a sua imaginação
-            </p>
+                de um slider, aprenda a tecer a magia que está por trás dos sites que você visita diariamente.</p>
         </div>
-    </div>
+    </section>
 
     <footer>
-    <p>&copy; 2ºA Téc. Desenvolvimento de Sistemas</p>
+        <p>Feira de Ciências do 2ºA Téc - 2023</p>
     </footer>
 
 </body>
