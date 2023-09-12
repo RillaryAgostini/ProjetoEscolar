@@ -7,6 +7,7 @@
     <meta name="description" content="Feira de Ciências do 2ºA Técnico - Conheça os projetos da nossa turma!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+  
     <title>Feira de Ciências da Escola</title>
 </head>
 
@@ -15,6 +16,24 @@
         <h1>Feira de Ciências do 2ºA Técnico</h1>
         <p>Conheça os projetos da nossa turma!</p>
     </header>
+
+    <div id="video-container">
+        <video id="meu-video">
+            <source src="/video/Feira_do_conhecimento.mp4" type="video/mp4" alt="Seu navegador não suporta o elemento de vídeo.">
+        </video>
+    </div>
+    <footer>
+        <div class="rodapé__controle">
+            <button onclick="playPause()">Play/Pause</button>
+            <input type="range" id="volumeRange" min="0" max="1" step="0.1" onchange="setVolume(this.value)"><br>        
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+
+
+
 
     <div class="container">
         <!-- Cartão 1 -->
@@ -48,7 +67,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2ºA Téc. Desenvolvimento de Sistemas</p>
+    <p>&copy; 2ºA Téc. Desenvolvimento de Sistemas</p>
     </footer>
 
 </body>
